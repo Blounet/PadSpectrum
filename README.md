@@ -1,7 +1,120 @@
+# PadSpectrum v0.0.1
+
+Turn your Novation Launchpad S into a live spectral audio visualizer and a YouTube media controller.
+
+---
+
+## Contents
+
+- `INSTALLER.bat`            -> Installation launcher (double-click)
+- `install.ps1`              -> PowerShell installation script
+- `padspectrum.py`           -> Main script
+- `extension/`               -> Chrome extension (PadSpectrum)
+- `padspectrum_banner.png`   -> Promotional visual
+
+---
+
+## Installation
+
+1. **Double-click `INSTALLER.bat`**
+   - Choose the installation directory (or press Enter for `Program Files`)
+   - Python will be installed automatically if missing
+   - pip dependencies will be installed automatically
+   - A shortcut will be created on the desktop and in the Start menu
+
+2. **Install the Chrome extension** (guided at the end of installation):
+   - Chrome opens automatically on `chrome://extensions`
+   - Enable Developer mode (top right)
+   - Click "Load unpacked extension"
+   - Select the `extension/` folder indicated
+
+---
+
+## Requirements
+
+- Windows 10/11
+- Launchpad S connected via USB
+- Google Chrome
+- **Stereo Mix enabled** (see section below)
+
+---
+
+## Enabling Stereo Mix (important)
+
+The script captures Windows system audio via "Stereo Mix".
+Without this step, the LEDs will not react to music.
+
+**Steps:**
+1. Right-click the sound icon in the taskbar -> **Sounds**
+2. **Recording** tab
+3. Right-click in the list -> **Show disabled devices**
+4. Right-click **Stereo Mix** -> **Enable**
+5. Right-click again -> **Set as default device**
+6. Click OK
+
+> **Note:** If "Stereo Mix" does not appear, your sound card does not support it
+> natively. In that case, install **VB-Cable** (free):
+> https://vb-audio.com/Cable/
+> Then route Windows audio output to "CABLE Input" in sound settings,
+> and the script will detect "CABLE Output" as the source.
+
+---
+
+## Display Modes
+
+Press the **Arm** button to cycle through 4 modes:
+
+| Mode | Description |
+|------|-------------|
+| 0    | Gradient bars (green bottom -> red top) |
+| 1    | Monochrome bars (color by height) |
+| 2    | Floating peak dot |
+| 3    | Radial display (bass on the outside, treble at the center) |
+
+---
+
+## YouTube Controls
+
+| Button   | Action                        |
+|----------|-------------------------------|
+| UP       | Volume +                      |
+| DOWN     | Volume -                      |
+| LEFT     | Previous track (YouTube)      |
+| RIGHT    | Next track (YouTube)          |
+| Session  | Open YouTube                  |
+| User 1   | Repeat                        |
+| User 2   | Shuffle                       |
+| Mixer    | Mute / Unmute                 |
+| Arm      | Change display mode           |
+
+---
+
+## Troubleshooting
+
+| Problem                         | Solution                                               |
+|---------------------------------|--------------------------------------------------------|
+| LEDs not reacting               | Check that Stereo Mix is enabled and set as default    |
+| Launchpad not detected          | Replug USB cable, restart script                       |
+| Buttons have no effect on YouTube | Check that Chrome extension is loaded               |
+| Error on launch                 | Check that Python is in Windows PATH                  |
+
+---
+
+## Links
+
+- Chrome Web Store: (publication in progress)
+- GitHub: https://github.com/Blounet/PadSpectrum
+- Privacy policy: https://blounet.github.io/PadSpectrum/privacy-policy.html
+
+---
+---
+
 # PadSpectrum v0.0.1 — Instructions d'installation
 
 Transformez votre Novation Launchpad S en visualiseur spectral audio en temps reel
 et en telecommande YouTube.
+
+---
 
 ## Contenu du dossier
 
@@ -102,5 +215,5 @@ Appuyez sur le bouton **Arm** pour cycler entre les 4 modes :
 ## Liens
 
 - Extension Chrome Web Store : (en cours de publication)
-- GitHub : https://github.com/Blounet/padspectrum
-- Politique de confidentialite : https://Blounet.github.io/padspectrum/privacy-policy.html
+- GitHub : https://github.com/Blounet/PadSpectrum
+- Politique de confidentialite : https://blounet.github.io/PadSpectrum/privacy-policy.html
