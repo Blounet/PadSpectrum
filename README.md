@@ -7,7 +7,7 @@ et en telecommande YouTube.
 
 - `INSTALLER.bat`            -> Lanceur de l'installation (double-clic)
 - `install.ps1`              -> Script d'installation PowerShell
-- `launchpad_spectrum.py`    -> Script principal
+- `padspectrum.py`           -> Script principal
 - `extension/`               -> Extension Chrome (PadSpectrum)
 - `padspectrum_banner.png`   -> Visuel promotionnel
 
@@ -102,5 +102,5 @@ Appuyez sur le bouton **Arm** pour cycler entre les 4 modes :
 ## Liens
 
 - Extension Chrome Web Store : (en cours de publication)
-- GitHub : https://github.com/david-36800/padspectrum
-- Politique de confidentialite : https://david-36800.github.io/launchpad-s-controller/privacy-policy.html
+- GitHub : https://github.com/Blounet/padspectrum
+- Politique de confidentialite : https://Blounet.github.io/padspectrum/privacy-policy.html
