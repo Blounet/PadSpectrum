@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Windows
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# VS Code
+.vscode/
+
+# Logs et temporaires
+*.tmp
+*.log
+*.bak
+
+# Fichiers d'installation generes
+*.zip
